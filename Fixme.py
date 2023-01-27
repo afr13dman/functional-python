@@ -20,6 +20,10 @@ def evens(n):
     >>> evens(-1)
     []
     '''
+    xs = range(0, n+1)
+    xs = [x for x in xs if x % 2 == 0]
+    xs = list(xs)
+    return xs
 
 
 def threes(n):
@@ -37,6 +41,7 @@ def threes(n):
     >>> threes(50)
     [3, 13, 23, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43]
     '''
+    xs = range(0, n+1)
 
 
 def small_words(text):
